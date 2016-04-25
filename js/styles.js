@@ -13,4 +13,6 @@ $(function() {
       }
   );
 
+  $('.resume').css('height', $(window).height()+'px');
+
 });
