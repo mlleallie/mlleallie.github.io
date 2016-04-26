@@ -149,6 +149,14 @@ a.icons {
   text-align: center;
 }
 
+iframe{
+  width: 60%;
+}
+
+.map iframe{
+  width: 80%;
+}
+
 #map {
   height: 400px;
 }
