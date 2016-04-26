@@ -61,18 +61,28 @@ header {
   width: auto;
 }
 
-@-webkit-keyframes thumb {
-  0% { -webkit-transform: translate(3em, 0); }
-  50% {-webkit-transform: translate(.5em, .5em);}
-  100% { -webkit-transform: translate(0, 3em); }
+@-webkit-keyframes wiggle {
+  0% {-webkit-transform:rotate(4deg);}
+  50% {-webkit-transform:rotate(-4deg);}
+  100% {-webkit-transform:rotate(4deg);}
 }
 
-.manatee:hover{
-  -webkit-animation-name: thumb;
-  -webkit-animation-duration: 500ms;
-  -webkit-transform-origin:50% 50%;
-  -webkit-animation-iteration-count: 100;
-  -webkit-animation-timing-function: linear;
+@-moz-keyframes wiggle {
+  0% {-moz-transform:rotate(4deg);}
+  50% {-moz-transform:rotate(-4deg);}
+  100% {-moz-transform:rotate(4deg);}
+}
+
+@keyframes wiggle {
+  0% {transform:rotate(4deg);}
+  50% {transform:rotate(-4deg);}
+  100% {transform:rotate(4deg);}
+}
+
+.manatee:hover {
+  -webkit-animation: wiggle 0.5s infinite;
+  -moz-animation: wiggle 0.5s infinite;
+  animation: wiggle 0.5s infinite;
 }
 
 .nav a{
@@ -111,11 +121,9 @@ a.linkyo:hover{
   vertical-align: top;
   border-radius: 20%;
   border: black 1px solid;
-  margin-right: 80%;
 }
 
 .links {
-  position:absolute;
   width:100%;
   height:60px;
   text-align: center;
@@ -141,10 +149,6 @@ a.icons {
   text-align: center;
 }
 
-iframe{
-  width: 60%;
-}
-
-.map iframe{
-  width: 100%;
+#map {
+  height: 400px;
 }
