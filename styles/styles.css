@@ -49,6 +49,7 @@ header {
   font-family: 'Muli';
   font-size: 40px;
   color: #EFDFBB;
+  padding-top: 30px;
 }
 
 .title:hover{
@@ -63,12 +64,14 @@ header {
 
 .nav {
   list-style-type: none;
-  padding-top: 115px;
+  padding-top: 100px;
 }
 
 .manatee {
   height: 90px ;
   width: auto;
+  margin-top: 60px;
+
 }
 
 @-webkit-keyframes wiggle {
@@ -178,11 +181,13 @@ iframe{
 
 .workhead {
   width: 100%;
-  text-align: center;
-  font-family: 'Muli';
-  font-size: 20px;
-  color: #EFDFBB;
-  margin: 0;
+    a {
+      text-align: center;
+      font-family: 'Muli';
+      font-size: 20px;
+      color: #EFDFBB;
+      margin: 0;
+    }
 }
 
 .work img{
@@ -230,4 +235,18 @@ button {
     color: black;
     text-decoration: none;
     cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover{
+  color: #008080;
+}
+
+.construction {
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+  font-family: 'Muli';
+  font-size: 40px;
+  color: #008080;
 }
