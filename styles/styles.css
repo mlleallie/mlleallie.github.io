@@ -1,6 +1,7 @@
 body{
   margin: 0;
   background: rgb(97, 164, 75);
+  overflow-x: hidden;
 }
 
 header {
@@ -11,7 +12,7 @@ header {
   background-position: center top;
 }
 
-* {
+/** {
     box-sizing: border-box;
 }
 
@@ -33,15 +34,38 @@ header {
     padding: 15px;
 }
 
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}*/
+
 .title {
   width: 100%;
   text-align: center;
   font-family: 'Muli';
   font-size: 40px;
   color: #EFDFBB;
+  padding-top: 30px;
 }
 
 .title:hover{
+  color: #008080;
+}
+
+a {
+  text-align: center;
+  font-family: 'Nunito';
+  font-size: 15px;
+  color: #EFDFBB;
+  text-decoration: none;
+}
+
+a:hover{
   color: #008080;
 }
 
@@ -53,12 +77,14 @@ header {
 
 .nav {
   list-style-type: none;
-  padding-top: 115px;
+  padding-top: 100px;
 }
 
 .manatee {
   height: 90px ;
   width: auto;
+  margin-top: 60px;
+
 }
 
 @-webkit-keyframes wiggle {
@@ -100,9 +126,11 @@ header {
   width: 90%;
   font-family: 'Nunito';
   font-weight: 400;
-  margin-left: 80px;
-  margin-top: 20px;
+/*  margin-left: 10%;
+*/  margin-top: 20px;
   color: #EFDFBB;
+  text-align: center;
+  font-size: 15px;
 }
 
 .linkyo {
@@ -115,8 +143,12 @@ a.linkyo:hover{
   font-style: italic;
 }
 
+.selfie {
+  text-align: center;
+}
+
 .sidebar_pic {
-  width: 55%;
+  width: 200px;
   height: auto;
   vertical-align: top;
   border-radius: 20%;
@@ -135,12 +167,15 @@ a.icons {
   text-align: center;
 }
 
+.pdf {
+  text-size: 15px;
+}
+
 .resume_link{
   text-align: center;
   width: 90%;
   font-family: 'Nunito';
   font-weight: 400;
-  margin-left: 80px;
   margin-top: 20px;
   color: #EFDFBB;
 }
@@ -150,7 +185,7 @@ a.icons {
 }
 
 iframe{
-  width: 60%;
+  width: 70%;
 }
 
 .map iframe{
@@ -161,16 +196,63 @@ iframe{
   height: 400px;
 }
 
-a {
-  text-align: center;
-  font-family: 'Muli';
-  font-size: 20px;
-  color: #EFDFBB;
-  text-decoration: none;
+.workhead {
+  width: 100%;
+    a {
+      text-align: center;
+      font-family: 'Muli';
+      font-size: 20px;
+      color: #EFDFBB;
+      margin: 0;
+    }
 }
 
-a:hover{
-  color: #008080;
+.work img{
+  text-align: center;
+  height: 280px;
+  width: auto;
+  padding-top: 5%;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .construction {
@@ -180,5 +262,4 @@ a:hover{
   font-family: 'Muli';
   font-size: 40px;
   color: #008080;
-
 }

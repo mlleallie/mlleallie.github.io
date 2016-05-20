@@ -17,6 +17,7 @@ $(function() {
 
 });
 
+//maps api functions
   function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 10,
@@ -29,4 +30,25 @@ $(function() {
       map: map,
       icon: image
     });
+  };
+
+//modal javascript
+  // var modal = document.getElementById('daytripprrModal');
+  var btn = document.getElementsByClassName("btn");
+  var span = document.getElementsByClassName("close")[0];
+  btn.onclick = function() {
+    console.log(this)
+      var modal = this.btn.id + "Modal";
+      // find the id of 'this'
+      // get id + Modal
+      // set style of Modal to display
+      modal.style.display = "block";
   }
+  // span.onclick = function() {
+  //     modal.style.display = "none";
+  // }
+  // window.onclick = function(event) {
+  //     if (event.target == modal) {
+  //         modal.style.display = "none";
+  //     }
+  // }
