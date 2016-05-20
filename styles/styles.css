@@ -1,6 +1,7 @@
 body{
   margin: 0;
   background: rgb(97, 164, 75);
+  overflow-x: hidden;
 }
 
 header {
@@ -53,6 +54,18 @@ header {
 }
 
 .title:hover{
+  color: #008080;
+}
+
+a {
+  text-align: center;
+  font-family: 'Nunito';
+  font-size: 15px;
+  color: #EFDFBB;
+  text-decoration: none;
+}
+
+a:hover{
   color: #008080;
 }
 
@@ -117,6 +130,7 @@ header {
 */  margin-top: 20px;
   color: #EFDFBB;
   text-align: center;
+  font-size: 15px;
 }
 
 .linkyo {
@@ -153,12 +167,15 @@ a.icons {
   text-align: center;
 }
 
+.pdf {
+  text-size: 15px;
+}
+
 .resume_link{
   text-align: center;
   width: 90%;
   font-family: 'Nunito';
   font-weight: 400;
-  margin-left: 80px;
   margin-top: 20px;
   color: #EFDFBB;
 }
@@ -168,7 +185,7 @@ a.icons {
 }
 
 iframe{
-  width: 60%;
+  width: 70%;
 }
 
 .map iframe{
@@ -236,10 +253,6 @@ button {
     text-decoration: none;
     cursor: pointer;
     text-decoration: none;
-}
-
-a:hover{
-  color: #008080;
 }
 
 .construction {
